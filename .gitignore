@@ -4,4 +4,4 @@
 .swiftpm/
 
 **/xcuserdata
-
+*.xcodeproj
