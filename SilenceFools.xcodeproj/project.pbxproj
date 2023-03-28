@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		884921DB29D1F8FC00B53E08 /* SilenceFoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884921DA29D1F8FC00B53E08 /* SilenceFoolsApp.swift */; };
-		884921DD29D1F8FC00B53E08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884921DC29D1F8FC00B53E08 /* ContentView.swift */; };
 		884921DF29D1F8FD00B53E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884921DE29D1F8FD00B53E08 /* Assets.xcassets */; };
 		884921E229D1F8FD00B53E08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884921E129D1F8FD00B53E08 /* Preview Assets.xcassets */; };
+		884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 884921EB29D1FB0600B53E08 /* SimplyCoreAudio */; };
+		88B63C6229D24EEA00752795 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6129D24EEA00752795 /* HotKey */; };
+		88B63C6529D2563600752795 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6429D2563600752795 /* SimpleToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		884921D729D1F8FC00B53E08 /* SilenceFools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilenceFools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884921DA29D1F8FC00B53E08 /* SilenceFoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilenceFoolsApp.swift; sourceTree = "<group>"; };
-		884921DC29D1F8FC00B53E08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		884921DE29D1F8FD00B53E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884921E129D1F8FD00B53E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884921E329D1F8FD00B53E08 /* SilenceFools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilenceFools.entitlements; sourceTree = "<group>"; };
+		884921E929D1F9F300B53E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B63C6229D24EEA00752795 /* HotKey in Frameworks */,
+				88B63C6529D2563600752795 /* SimpleToast in Frameworks */,
+				884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +57,8 @@
 		884921D929D1F8FC00B53E08 /* SilenceFools */ = {
 			isa = PBXGroup;
 			children = (
+				884921E929D1F9F300B53E08 /* Info.plist */,
 				884921DA29D1F8FC00B53E08 /* SilenceFoolsApp.swift */,
-				884921DC29D1F8FC00B53E08 /* ContentView.swift */,
 				884921DE29D1F8FD00B53E08 /* Assets.xcassets */,
 				884921E329D1F8FD00B53E08 /* SilenceFools.entitlements */,
 				884921E029D1F8FD00B53E08 /* Preview Content */,
@@ -85,6 +90,11 @@
 			dependencies = (
 			);
 			name = SilenceFools;
+			packageProductDependencies = (
+				884921EB29D1FB0600B53E08 /* SimplyCoreAudio */,
+				88B63C6129D24EEA00752795 /* HotKey */,
+				88B63C6429D2563600752795 /* SimpleToast */,
+			);
 			productName = SilenceFools;
 			productReference = 884921D729D1F8FC00B53E08 /* SilenceFools.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +123,11 @@
 				Base,
 			);
 			mainGroup = 884921CE29D1F8FC00B53E08;
+			packageReferences = (
+				884921EA29D1FB0600B53E08 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */,
+				88B63C6029D24EEA00752795 /* XCRemoteSwiftPackageReference "HotKey" */,
+				88B63C6329D2563600752795 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = 884921D829D1F8FC00B53E08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884921DD29D1F8FC00B53E08 /* ContentView.swift in Sources */,
 				884921DB29D1F8FC00B53E08 /* SilenceFoolsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +286,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SilenceFools/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SilenceFools/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to be able to mute and unmute.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -297,7 +315,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SilenceFools/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SilenceFools/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to be able to mute and unmute.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -332,6 +354,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		884921EA29D1FB0600B53E08 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rnine/SimplyCoreAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		88B63C6029D24EEA00752795 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		88B63C6329D2563600752795 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		884921EB29D1FB0600B53E08 /* SimplyCoreAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884921EA29D1FB0600B53E08 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */;
+			productName = SimplyCoreAudio;
+		};
+		88B63C6129D24EEA00752795 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B63C6029D24EEA00752795 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+		88B63C6429D2563600752795 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B63C6329D2563600752795 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 884921CF29D1F8FC00B53E08 /* Project object */;
 }
