@@ -1,32 +1,34 @@
 {
-  "pins" : [
-    {
-      "identity" : "hotkey",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/soffes/HotKey",
-      "state" : {
-        "branch" : "master",
-        "revision" : "c13662730cb5bc28de4a799854bbb018a90649bf"
+  "object": {
+    "pins": [
+      {
+        "package": "HotKey",
+        "repositoryURL": "https://github.com/soffes/HotKey",
+        "state": {
+          "branch": "master",
+          "revision": "c13662730cb5bc28de4a799854bbb018a90649bf",
+          "version": null
+        }
+      },
+      {
+        "package": "SimplyCoreAudio",
+        "repositoryURL": "https://github.com/rnine/SimplyCoreAudio.git",
+        "state": {
+          "branch": null,
+          "revision": "73014324f2a916b445b4da5a4232aa57033267af",
+          "version": "4.1.0"
+        }
+      },
+      {
+        "package": "swift-atomics",
+        "repositoryURL": "https://github.com/apple/swift-atomics.git",
+        "state": {
+          "branch": null,
+          "revision": "ff3d2212b6b093db7f177d0855adbc4ef9c5f036",
+          "version": "1.0.3"
+        }
       }
-    },
-    {
-      "identity" : "simplycoreaudio",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rnine/SimplyCoreAudio.git",
-      "state" : {
-        "revision" : "73014324f2a916b445b4da5a4232aa57033267af",
-        "version" : "4.1.0"
-      }
-    },
-    {
-      "identity" : "swift-atomics",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-atomics.git",
-      "state" : {
-        "revision" : "ff3d2212b6b093db7f177d0855adbc4ef9c5f036",
-        "version" : "1.0.3"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }

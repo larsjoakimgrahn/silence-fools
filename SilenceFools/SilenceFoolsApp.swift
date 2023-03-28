@@ -22,7 +22,6 @@ final class SilenceFoolsViewModel: ObservableObject {
         
         updateIconBasedOnMuteState()
         hotKey.keyDownHandler = { self.toggleMuteOfDefaultInputDevice() }
-        
     }
     
     deinit {
