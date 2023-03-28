@@ -12,6 +12,7 @@
 		884921E229D1F8FD00B53E08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884921E129D1F8FD00B53E08 /* Preview Assets.xcassets */; };
 		884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 884921EB29D1FB0600B53E08 /* SimplyCoreAudio */; };
 		88B63C6229D24EEA00752795 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6129D24EEA00752795 /* HotKey */; };
+		88B63C6D29D2F60200752795 /* BezelNotification in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6C29D2F60200752795 /* BezelNotification */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		884921E129D1F8FD00B53E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884921E329D1F8FD00B53E08 /* SilenceFools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilenceFools.entitlements; sourceTree = "<group>"; };
 		884921E929D1F9F300B53E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88B63C6A29D2F5DC00752795 /* BHBezelNotification */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BHBezelNotification; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 			files = (
 				88B63C6229D24EEA00752795 /* HotKey in Frameworks */,
 				884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */,
+				88B63C6D29D2F60200752795 /* BezelNotification in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,8 +42,10 @@
 		884921CE29D1F8FC00B53E08 = {
 			isa = PBXGroup;
 			children = (
+				88B63C6829D2F32D00752795 /* Packages */,
 				884921D929D1F8FC00B53E08 /* SilenceFools */,
 				884921D829D1F8FC00B53E08 /* Products */,
+				88B63C6B29D2F60200752795 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +77,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		88B63C6829D2F32D00752795 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				88B63C6A29D2F5DC00752795 /* BHBezelNotification */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		88B63C6B29D2F60200752795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +111,7 @@
 			packageProductDependencies = (
 				884921EB29D1FB0600B53E08 /* SimplyCoreAudio */,
 				88B63C6129D24EEA00752795 /* HotKey */,
+				88B63C6C29D2F60200752795 /* BezelNotification */,
 			);
 			productName = SilenceFools;
 			productReference = 884921D729D1F8FC00B53E08 /* SilenceFools.app */;
@@ -380,6 +401,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 88B63C6029D24EEA00752795 /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
+		};
+		88B63C6C29D2F60200752795 /* BezelNotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BezelNotification;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
