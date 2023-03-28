@@ -2,6 +2,7 @@ import SwiftUI
 import SimplyCoreAudio
 import Combine
 import HotKey
+import BezelNotification
 
 final class SilenceFoolsViewModel: ObservableObject {
     @Published var icon = "mic.fill"
@@ -36,9 +37,12 @@ final class SilenceFoolsViewModel: ObservableObject {
         
         if (isMuted == true) {
             self.icon = "mic.slash.fill"
+            let icon = #imageLiteral(resourceName: "Muted-Image")
+            NotificationBezel.show(messageText: "Muted", icon: icon, timeToLive: .short)
             defaultInputDevice?.setVolume(100, channel: self.channel, scope: self.scope)
         } else {
-            self.icon = "mic.fill"
+            let icon = #imageLiteral(resourceName: "Unmuted-Image")
+            NotificationBezel.show(messageText: "Unmuted", icon: icon, timeToLive: .short)
             defaultInputDevice?.setVolume(0, channel: self.channel, scope: self.scope)
         }
     }
