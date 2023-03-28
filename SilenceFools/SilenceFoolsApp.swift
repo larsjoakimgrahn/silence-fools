@@ -41,6 +41,7 @@ final class SilenceFoolsViewModel: ObservableObject {
             NotificationBezel.show(messageText: "Muted", icon: icon, timeToLive: .short)
             defaultInputDevice?.setVolume(100, channel: self.channel, scope: self.scope)
         } else {
+            self.icon = "mic.fill"
             let icon = #imageLiteral(resourceName: "Unmuted-Image")
             NotificationBezel.show(messageText: "Unmuted", icon: icon, timeToLive: .short)
             defaultInputDevice?.setVolume(0, channel: self.channel, scope: self.scope)
