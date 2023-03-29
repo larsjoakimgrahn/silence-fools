@@ -13,6 +13,9 @@
 		884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 884921EB29D1FB0600B53E08 /* SimplyCoreAudio */; };
 		88B63C6229D24EEA00752795 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6129D24EEA00752795 /* HotKey */; };
 		88B63C6D29D2F60200752795 /* BezelNotification in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C6C29D2F60200752795 /* BezelNotification */; };
+		88B63C6F29D3398300752795 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B63C6E29D3398300752795 /* SettingsView.swift */; };
+		88B63C7B29D3862300752795 /* KeyHolder in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C7A29D3862300752795 /* KeyHolder */; };
+		88B63C7E29D413AC00752795 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 88B63C7D29D413AC00752795 /* Defaults */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +25,8 @@
 		884921E129D1F8FD00B53E08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884921E329D1F8FD00B53E08 /* SilenceFools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilenceFools.entitlements; sourceTree = "<group>"; };
 		884921E929D1F9F300B53E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		88B63C6A29D2F5DC00752795 /* BHBezelNotification */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BHBezelNotification; sourceTree = "<group>"; };
+		88B63C6E29D3398300752795 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		88B63C7329D383F100752795 /* BHBezelNotification2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BHBezelNotification2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,9 +34,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B63C7B29D3862300752795 /* KeyHolder in Frameworks */,
 				88B63C6229D24EEA00752795 /* HotKey in Frameworks */,
 				884921EC29D1FB0600B53E08 /* SimplyCoreAudio in Frameworks */,
 				88B63C6D29D2F60200752795 /* BezelNotification in Frameworks */,
+				88B63C7E29D413AC00752795 /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 			children = (
 				884921E929D1F9F300B53E08 /* Info.plist */,
 				884921DA29D1F8FC00B53E08 /* SilenceFoolsApp.swift */,
+				88B63C6E29D3398300752795 /* SettingsView.swift */,
 				884921DE29D1F8FD00B53E08 /* Assets.xcassets */,
 				884921E329D1F8FD00B53E08 /* SilenceFools.entitlements */,
 				884921E029D1F8FD00B53E08 /* Preview Content */,
@@ -80,7 +87,7 @@
 		88B63C6829D2F32D00752795 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				88B63C6A29D2F5DC00752795 /* BHBezelNotification */,
+				88B63C7329D383F100752795 /* BHBezelNotification2 */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -112,6 +119,8 @@
 				884921EB29D1FB0600B53E08 /* SimplyCoreAudio */,
 				88B63C6129D24EEA00752795 /* HotKey */,
 				88B63C6C29D2F60200752795 /* BezelNotification */,
+				88B63C7A29D3862300752795 /* KeyHolder */,
+				88B63C7D29D413AC00752795 /* Defaults */,
 			);
 			productName = SilenceFools;
 			productReference = 884921D729D1F8FC00B53E08 /* SilenceFools.app */;
@@ -144,6 +153,8 @@
 			packageReferences = (
 				884921EA29D1FB0600B53E08 /* XCRemoteSwiftPackageReference "SimplyCoreAudio" */,
 				88B63C6029D24EEA00752795 /* XCRemoteSwiftPackageReference "HotKey" */,
+				88B63C7929D3862300752795 /* XCRemoteSwiftPackageReference "KeyHolder" */,
+				88B63C7C29D413AC00752795 /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = 884921D829D1F8FC00B53E08 /* Products */;
 			projectDirPath = "";
@@ -172,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				884921DB29D1F8FC00B53E08 /* SilenceFoolsApp.swift in Sources */,
+				88B63C6F29D3398300752795 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +401,22 @@
 				kind = branch;
 			};
 		};
+		88B63C7929D3862300752795 /* XCRemoteSwiftPackageReference "KeyHolder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/KeyHolder.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		88B63C7C29D413AC00752795 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -405,6 +433,16 @@
 		88B63C6C29D2F60200752795 /* BezelNotification */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BezelNotification;
+		};
+		88B63C7A29D3862300752795 /* KeyHolder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B63C7929D3862300752795 /* XCRemoteSwiftPackageReference "KeyHolder" */;
+			productName = KeyHolder;
+		};
+		88B63C7D29D413AC00752795 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88B63C7C29D413AC00752795 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
